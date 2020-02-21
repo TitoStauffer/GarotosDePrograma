@@ -1,0 +1,275 @@
+/* Import de Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700,900&display=swap');
+/* ToolTip */
+.tooltip {
+  position: relative;
+  display: block;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  max-width: 200px;
+  width: 100%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: .1em;
+  padding: 5px 0;
+  border-radius: 6px;
+/* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  left: 75%;
+/* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/* Configuração geral das OL LI */
+ol, li {
+  list-style: none;
+}
+/* Configuração Geral dos A */
+a {
+  text-decoration: none;
+}
+/* Configurações Css Geral */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+}
+/* Menu Bar */
+.menu {
+  height: 60px;
+  background: #000;
+}
+.menu-bar img {
+  background-color: #ff4800;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+.menu-bar img:hover {
+  background: #fff;
+  transition-duration: .5s !important;  
+  transition: ease-in-out;
+}
+.menu-bar ul li{
+  padding: 20px 20px 0 0;
+  display: grid;
+  float: right;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1em;
+}
+.menu-bar ul li a{
+  color: #ff4800;
+}
+.menu-bar ul li a:hover{
+  color: #fff;
+  transition-duration: .3s !important;  
+  transition: linear;
+}
+.ativo {
+  color: #fff !important;
+}
+.main-header {
+  background: url("img/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  height: 400px;
+  
+  
+}
+.title {
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+  
+}
+
+.title iframe {
+  width: 780px;
+  border-radius: 6px;
+}
+.title h1 {
+  font-size: 48px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ff4800;
+}
+.title p {
+  font-size: 24px;
+  text-align: center;
+  color: #ff4800;
+  font-weight: 400;
+}
+.main-header .title p {
+  font-size: 24px;
+  text-align: center;
+  color: #ff4800;
+  text-shadow: 3px 2px 2px #000000;
+  font-weight: 400;
+}
+
+.main-sobre {
+  flex-direction: column;
+  background: #fff;
+  height: 400px;
+  display: flex;
+}
+.btn {
+  color: #ff4800;
+  border: #ff4800 2px solid;
+  border-radius: 6px;
+  padding: 10px 60px;
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-black:hover {
+  background: rgba(255,255,255,0.75);
+  color: #000;
+}
+.main-portfolio {
+  flex-direction: column;
+  background: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+}
+.main-contato {
+  flex-direction: column;
+  background: #fff;
+  height: 400px;
+  display: flex;
+}
+/* FOOTER */
+footer {
+  background-color: #000;
+  height: 100px;
+}
+footer > p{
+  color: #ff4800;
+  font-size: 1em;
+  font-weight: 100;
+  padding: 37px;
+  text-align: center;
+}
+/* PAGINA CONTATO */
+.contato-header{
+  background-image: url("img/fale-conoscojpg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.contato-box {
+  padding: 20px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contato-box .left{
+  display: flex;
+  align-self: center;
+}
+.contato-box .left ul li a{
+  color: #000;
+}
+.contato-box .left ul li a:hover{
+  font-weight: bolder;
+}
+.contato-box .right form {
+  padding-top: 20px;
+}
+.contato-box .right input{
+  width: 100%;
+  border-radius: 6px;
+  background: none;
+  border: #000 1px solid;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+}
+.contato-box .right .btn {
+  display: flex;
+  align-self: center;
+  margin-top: 2em;
+}
+/* Página de Portfólio */
+.portfolio-header {
+  height: 400px;
+  background: url("img/portfolio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card {
+  max-width: 400px;
+  -webkit-box-shadow: -1px 10px 15px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 10px 15px 3px rgba(0,0,0,0.75);
+  box-shadow: -1px 10px 15px 3px rgba(0,0,0,0.75);
+  border-radius: 6px;
+  margin: 5px auto;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h1{
+  padding: 10px 0 20px 0;
+  font-weight: 400;
+}
+.card a{
+  color: #ff4800;
+  font-weight: 400;
+  padding: 20px 20px;
+}
+
+.card:hover {
+  -webkit-box-shadow: -1px 10px 30px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 10px 30px 8px rgba(0,0,0,0.75);
+  box-shadow: -1px 10px 30px 8px rgba(0,0,0,0.75);
+}
+/* PAGINA SOBRE */
+
+.sobre-header .title > h1{
+  color: #ff4800  ;
+  font-weight: 100;
+}
+.sobre-header {
+  height: 400px;
+  background: url("img/sobre.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sobre-hist {
+  background-color: #000;
+}
+
+.sobre-hist p {
+  font-size: 1.125em;
+}
+
+.map {
+  background-color: #d5d5d5;
+}
